@@ -1,0 +1,24 @@
+[package]
+name = "startup"
+version = "0.1.0"
+authors = ["Håvard Wormdal Høiby <havardwhoiby@gmail.com>"]
+
+build = "build/startup.rs"
+
+[build-dependencies]
+submodules = "0.1"
+
+[build-dependencies.gcc]
+git = "https://github.com/sondrele/gcc-rs.git"
+
+[target.thumbv7m-none-eabi.dependencies.core]
+git = "https://github.com/RustyGecko/rust-core.git"
+
+[target.thumbv7m-none-eabi.dependencies.libc]
+git = "https://github.com/RustyGecko/rust-libc.git"
+
+[target.thumbv7m-none-eabi.dependencies.rlibc]
+git = "https://github.com/RustyGecko/rlibc.git"
+
+[target.thumbv7m-none-eabi.dependencies.alloc]
+git = "https://github.com/RustyGecko/rust-alloc.git"
