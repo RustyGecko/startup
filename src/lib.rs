@@ -8,7 +8,6 @@ pub static NO_DEAD_CODE: u32 = 0;
 #[macro_use]
 extern crate core;
 extern crate libc;
-extern crate rlibc;
 
 pub mod lang_items;
 pub mod mem;
