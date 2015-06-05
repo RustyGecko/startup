@@ -30,6 +30,9 @@ fn compile_library() {
         .flag("-Wall")
         .flag("-mcpu=cortex-m3")
         .flag("-mthumb")
+        .flag("-fno-builtin")
+        .flag("-ffunction-sections")
+        .flag("-fdata-sections")
 
         .file("efm32-common/Device/EFM32GG/Source/GCC/startup_efm32gg.S")
         .file("efm32-common/Device/EFM32GG/Source/system_efm32gg.c")
